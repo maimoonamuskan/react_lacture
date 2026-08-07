@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f4f4f4;
+        }
+
+        .photo{
+            width:250px;
+            border-radius:10px;
+        }
+
+        ul{
+            list-style-type:square;
+            width:300px;
+            margin:20px auto;
+            text-align:left;
+        }
+
+        button{
+            padding:10px 20px;
+            font-size:16px;
+            background:royalblue;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Maimoona Muskan Todos</h1>
+
+    <img
+        src="todo.png"
+        alt="Todo Image"
+        class="photo"
+    >
+
+    <ul>
+        <li>Learn HTML</li>
+        <li>Learn CSS</li>
+        <li>Learn JavaScript</li>
+        <li>Learn React</li>
+    </ul>
+
+    <button onclick="callFun()">Click Me</button>
+
+    <script>
+        function callFun(){
+            alert("Function Called!");
+        }
+    </script>
+
+</body>
+</html>
