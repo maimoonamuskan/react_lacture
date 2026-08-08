@@ -192,22 +192,257 @@
 
 
 
-function App() {
+// function App() {
 
-  function callFun() {
-    alert("Function Called");
-  }
-//   const fruit = ()=> {
-// alert("Apple");
+//   function callFun() {
+//     alert("Function Called");
 //   }
-const fruit = (name) => {
-    alert(name);
-  }
-  return(
+// //   const fruit = ()=> {
+// // alert("Apple");
+// //   }
+// const fruit = (name) => {
+//     alert(name);
+//   }
+//   return(
+//     <div>
+//       <h1>Event and Function Call</h1>
+//       <button onClick={()=>fruit("Apple")}> Apple</button>
+//       <button onClick={()=>fruit("Banana")}> Banana</button>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+///state
+
+// import { useState } from "react";
+
+// function App() {
+//   const [count, setCount] = useState(0);
+
+//   return (
+//     <div>
+//       <h1>State Example</h1>
+
+//       <h2>{count}</h2>
+
+//       <button onClick={() => setCount(count + 1)}>
+//         Increase
+//       </button>
+
+//       <button onClick={() => setCount(count - 1)}>
+//         Decrease
+//       </button>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+//toogle=>state change hide and show
+// import { useState } from "react";
+
+// function App() {
+//   const [show, setShow] = useState(true);
+
+//   return (
+//     <div>
+//       <h1>Toggle Example</h1>
+
+//       <button onClick={() => setShow(!show)}>
+//         Show / Hide
+//       </button>
+
+//       {show && <h2>Hello Muskan</h2>}
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// import State from "./State";
+
+// function App() {
+//   return (
+//     <div>
+//       <h1>React State Example</h1>
+
+//       <State />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+// import State from "./State";
+// import Toggle from "./Toggle";
+
+// function App() {
+//   return (
+//     <div>
+//       <h1>React Practice</h1>
+
+//       <State />
+
+//       <hr />
+
+//       <Toggle />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+// import State from "./State";
+// import Toggle from "./Toggle";
+// import Conditional from "./Conditional";
+
+// function App() {
+//   return (
+//     <div>
+//       <h1>React Practice</h1>
+
+//       <State />
+
+//       <hr />
+
+//       <Toggle />
+
+//       <hr />
+
+//       <Conditional />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+// import State from "./State";
+// import Toggle from "./Toggle";
+// import Conditional from "./Conditional";
+// import User from "./UserProps";
+
+// function App() {
+//   return (
+//     <div>
+//       <h1>React Practice</h1>
+
+//       <State />
+
+//       <hr />
+
+//       <Toggle />
+
+//       <hr />
+
+//       <Conditional />
+
+//       <hr />
+
+//       <User
+//         name="Muskan Khan"
+//         age={21}
+//         email="maimoonamuskan89@gmail.com"
+//       />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// import State from "./State";
+// import Toggle from "./Toggle";
+// import Conditional from "./Conditional";
+// import UserProps from "./UserProps";
+// import UserPropsAdvanced from "./UserPropsAdvanced";
+
+// function App() {
+//   return (
+//     <div>
+//       <h1>React Practice</h1>
+
+//       <State />
+
+//       <hr />
+
+//       <Toggle />
+
+//       <hr />
+
+//       <Conditional />
+
+//       <hr />
+
+//       <UserProps
+//         name="Muskan Khan"
+//         age={21}
+//         email="maimoonamuskan89@gmail.com"
+//       />
+
+//       <hr />
+
+//       <UserPropsAdvanced
+//         name="Muskan Khan"
+//         age={21}
+//         skills={["HTML", "CSS", "React"]}
+//       />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+//ONCHANGE
+import State from "./State";
+import Toggle from "./Toggle";
+import Conditional from "./Conditional";
+import UserProps from "./UserProps";
+import UserPropsAdvanced from "./UserPropsAdvanced";
+import OnChange from "./OnChange";
+
+function App() {
+  return (
     <div>
-      <h1>Event and Function Call</h1>
-      <button onClick={()=>fruit("Apple")}> Apple</button>
-      <button onClick={()=>fruit("Banana")}> Banana</button>
+      <h1>React Practice</h1>
+
+      <State />
+
+      <hr />
+
+      <Toggle />
+
+      <hr />
+
+      <Conditional />
+
+      <hr />
+
+      <UserProps
+        name="Muskan Khan"
+        age={21}
+        email="maimoonamuskan89@gmail.com"
+      />
+
+      <hr />
+
+      <UserPropsAdvanced
+        name="Muskan Khan"
+        age={21}
+        skills={["HTML", "CSS", "React"]}
+      />
+
+      <hr />
+
+      <OnChange />
     </div>
   );
 }
