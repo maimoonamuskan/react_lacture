@@ -1,21 +1,20 @@
-import { useState } from "react";
-
 function OnChange() {
-  const [name, setName] = useState("");
 
-  return (
-    <div>
-      <h2>onChange Example</h2>
+    const handleChange = (event) => {
+        console.log(event.target.value);
+    };
 
-      <input
-        type="text"
-        placeholder="Enter your name"
-        onChange={(e) => setName(e.target.value)}
-      />
+    return (
+        <div>
+            <h2>onChange Event</h2>
 
-      <h3>Your Name: {name}</h3>
-    </div>
-  );
+            <input
+                type="text"
+                onChange={handleChange}
+                placeholder="Enter your name"
+            />
+        </div>
+    );
 }
 
 export default OnChange;

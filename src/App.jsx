@@ -401,50 +401,69 @@
 
 // export default App;
 
-//ONCHANGE
-import State from "./State";
-import Toggle from "./Toggle";
-import Conditional from "./Conditional";
-import UserProps from "./UserProps";
-import UserPropsAdvanced from "./UserPropsAdvanced";
-import OnChange from "./OnChange";
+// import { useState } from "react";
+
+// function App() {
+
+//     const [val, setVal] = useState("");
+
+//     return (
+//         <div>
+
+//             <h1>Get Input field Value</h1>
+
+//             <input
+//                 type="text"
+//                 value={val}
+//                 onChange={(event) => setVal(event.target.value)}
+//                 placeholder="Enter your name"
+//             />
+
+//             <h1>{val}</h1>
+
+//             <button onClick={() => setVal("")}>
+//                 Clear Value
+//             </button>
+
+//         </div>
+//     );
+// }
+
+// export default App;
+
+// import Controlled from "./Controlled";
+
+// function App() {
+
+//     return (
+//         <div>
+//             <Controlled />
+//         </div>
+//     );
+// }
+
+// export default App;
+
+// import Checkbox from "./Checkbox";
+
+// function App() {
+
+//     return (
+//         <div>
+//             <Checkbox />
+//         </div>
+//     );
+// }
+
+// export default App;
+
+
+import RadioDropdown from "./RadioDropdown";
 
 function App() {
-  return (
-    <div>
-      <h1>React Practice</h1>
-
-      <State />
-
-      <hr />
-
-      <Toggle />
-
-      <hr />
-
-      <Conditional />
-
-      <hr />
-
-      <UserProps
-        name="Muskan Khan"
-        age={21}
-        email="maimoonamuskan89@gmail.com"
-      />
-
-      <hr />
-
-      <UserPropsAdvanced
-        name="Muskan Khan"
-        age={21}
-        skills={["HTML", "CSS", "React"]}
-      />
-
-      <hr />
-
-      <OnChange />
-    </div>
-  );
+    return (
+        <RadioDropdown />
+    );
 }
 
 export default App;
