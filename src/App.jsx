@@ -519,12 +519,27 @@
 
 // export default App;
 
-import ProductList from "./productList";
+// import ProductList from "./productList";
+
+// function App() {
+//     return (
+//         <ProductList />
+//     );
+// }
+
+// export default App;
+
+
+import Effect from "./Effect";
 
 function App() {
-    return (
-        <ProductList />
-    );
+  return (
+    <div>
+      <h1>useEffect Example</h1>
+
+      <Effect />
+    </div>
+  );
 }
 
 export default App;
