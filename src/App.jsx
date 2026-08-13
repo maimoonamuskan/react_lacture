@@ -530,14 +530,36 @@
 // export default App;
 
 
-import Effect from "./Effect";
+// import Effect from "./Effect";
+
+// function App() {
+//   return (
+//     <div>
+//       <h1>useEffect Example</h1>
+
+//       <Effect />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+// import Button from "./Button";
+
+// function App() {
+//   return <Button />;
+// }
+
+// export default App;
+import Counter from "./Counter";
 
 function App() {
   return (
     <div>
-      <h1>useEffect Example</h1>
+      <h1>React Counter App</h1>
 
-      <Effect />
+      <Counter />
     </div>
   );
 }
